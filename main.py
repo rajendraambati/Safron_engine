@@ -123,7 +123,7 @@ def main():
                     for url in urls_to_try:
                         emails = scrape_website_for_emails(url)
                         emails_found.extend(emails)
-                    email_results.append(", ".join(set(emails_found)) if emails_found else "N/A"
+                    email_results.append(", ".join(set(emails_found)) if emails_found else "N/A")
                 else:
                     email_results.append("N/A")
             
